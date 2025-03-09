@@ -1,0 +1,8 @@
+<div class="card p-3 mt-3">
+  <h3>Extracted Text</h3>
+  <p *ngIf="extractedText; else noText">{{ extractedText }}</p>
+
+  <ng-template #noText>
+    <p class="text-muted">No text extracted yet. Please upload a PDF.</p>
+  </ng-template>
+</div>
